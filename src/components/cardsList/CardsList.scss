@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Spectral:wght@400;500;600;700&display=swap");
+
+.ant-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .ant-spin-nested-loading {
+    flex: 1;
+
+    .ant-spin-container {
+      .ant-row {
+        gap: 15px;
+      }
+    }
+  }
+
+  .ant-list-pagination {
+    margin-top: 0;
+
+    .ant-pagination-prev,
+    .ant-pagination-next {
+      a {
+        font-size: 12px;
+        font-weight: 700;
+        font-family: "Manrope", sans-serif;
+      }
+    }
+
+    .ant-pagination-item {
+      a {
+        font-size: 12px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+    }
+
+    .ant-pagination-item-active {
+      background-color: #d2a651;
+      border-color: #d2a651;
+    }
+  }
+
+  .ant-card {
+    height: 220px;
+    width: 328px;
+
+    .ant-card-body {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5px;
+
+      .ant-card-meta {
+        flex: 1;
+
+        .ant-card-meta-detail {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .ant-card-meta-title {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: "Spectral", serif;
+            margin-bottom: 0;
+          }
+
+          .ant-card-meta-description {
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .ant-btn {
+        border: none;
+        display: flex;
+        align-items: center;
+        width: min-content;
+        margin-left: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Spectral:wght@400;600;700&display=swap");
+
+.create-event-title-container {
+  color: #231e20;
+  text-align: center;
+  margin-top: 40px;
+
+  .title {
+    font-family: "Spectral", serif;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.create-event-form {
+  width: 408px;
+  margin: auto;
+  margin-top: 16px;
+
+  .ant-upload {
+    width: 100% !important;
+
+    .ant-btn {
+      height: auto;
+      width: 100%;
+      padding: 10px;
+      border-width: 2px;
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  label {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px;
+    border-width: 2px;
+
+    .ant-input-affix-wrapper,
+    textarea {
+      border-width: 2px;
+    }
+  }
+
+  .ant-picker {
+    width: 100%;
+    border-width: 2px;
+  }
+}
