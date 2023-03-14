@@ -15,7 +15,6 @@ const SelectPackageForm = () => {
         <h1 className="title">Select Package</h1>
         <div className="subtitle">Choose the right package for your needs</div>
       </div>
-      {/* <Form form={form} onFinish={onFinish} className="select-package-form"> */}
       <div className="select-package-step">
         <Form.Item>
           <Radio.Group>
@@ -31,8 +30,6 @@ const SelectPackageForm = () => {
           </Radio.Group>
         </Form.Item>
       </div>
-
-      {/* </Form> */}
     </>
   );
 };

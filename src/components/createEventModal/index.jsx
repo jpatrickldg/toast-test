@@ -79,14 +79,6 @@ const CreateEventModal = ({ open, setOpen }) => {
                 Back
               </Button>
             )}
-            {/* {current === steps.length - 1 && (
-            <Button
-              type="primary"
-              onClick={() => console.log("Processing complete!")}
-            >
-              Done
-            </Button>
-          )} */}
             {current < steps.length - 1 && (
               <Button
                 type="primary"

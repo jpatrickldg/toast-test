@@ -4,24 +4,13 @@ import TextArea from "antd/es/input/TextArea";
 import React from "react";
 import "./CreateEventForm.scss";
 
-// const onFinish = (values) => {
-//   console.log("Success:", values);
-// };
-
 const CreateEventForm = () => {
-  // const [form] = Form.useForm();
   return (
     <>
       <div className="create-event-title-container">
         <h1 className="title">Create Event</h1>
         <p className="subtitle">You can customize this details in settings</p>
       </div>
-      {/* <Form
-        form={form}
-        onFinish={onFinish}
-        layout="vertical"
-        className="create-event-form"
-      > */}
       <div className="create-event-step">
         <Form.Item name="eventCoverPhoto">
           <Upload listType="text">
@@ -72,8 +61,6 @@ const CreateEventForm = () => {
           <TextArea placeholder="Optional" rows={4} />
         </Form.Item>
       </div>
-
-      {/* </Form> */}
     </>
   );
 };

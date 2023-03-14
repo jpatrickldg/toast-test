@@ -53,12 +53,6 @@ const CreditCardDetailsForm = () => {
             label="Expiration Date"
             required
             hasFeedback
-            // rules={[
-            //   {
-            //     required: true,
-            //     message: "Please enter card number",
-            //   },
-            // ]}
           >
             <DatePicker
               format={monthFormat}
