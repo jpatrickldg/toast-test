@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Spectral:wght@400;600;700&display=swap");
+
+.ant-card {
+  .ant-card-body {
+    text-align: center;
+    .package-name {
+      font-family: "Spectral", serif;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .package-price {
+      font-size: 32px;
+      font-weight: 700;
+      margin-top: 16px;
+    }
+
+    .package-content {
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 24px;
+
+      .single-package-description {
+        margin-bottom: 12px;
+        .anticon {
+          font-size: 20px;
+          font-weight: 700;
+          margin-inline-end: 12px;
+        }
+      }
+    }
+
+    .package-description {
+      margin-top: 40px;
+    }
+  }
+}

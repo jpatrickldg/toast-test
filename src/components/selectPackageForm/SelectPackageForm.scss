@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Spectral:wght@400;600;700&display=swap");
+
+.select-package-title-container {
+  color: #231e20;
+  text-align: center;
+  margin-top: 40px;
+
+  .title {
+    font-family: "Spectral", serif;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.select-package-step {
+  margin-top: 40px;
+
+  .ant-radio-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+
+    .ant-radio-button-wrapper {
+      height: 345px;
+      width: 264px;
+      border-width: 1.5px;
+    }
+
+    .ant-radio-button-wrapper:hover {
+      height: 360px;
+      width: 274px;
+    }
+  }
+}
