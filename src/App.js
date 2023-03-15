@@ -22,7 +22,7 @@ import CardsList from "./components/cardsList";
 import eventData from "./model/eventData";
 import CreateEventModal from "./components/createEventModal";
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Sider } = Layout;
 const { Search } = Input;
 const { RangePicker } = DatePicker;
 

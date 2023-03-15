@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Spectral:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Spectral:wght@400;500;600;700&display=swap");
 
 #components-layout-demo-responsive .logo {
   height: 32px;
@@ -14,7 +14,6 @@
     align-items: center;
 
     .header-container {
-      font-family: "Manrope", sans-serif;
       flex: 1;
       display: flex;
       justify-content: space-between;
@@ -40,7 +39,6 @@
     margin: 0;
     padding: 0 16px 24px 16px;
     background-color: white;
-    font-family: "Manrope", sans-serif;
 
     .content-navigation {
       display: flex;

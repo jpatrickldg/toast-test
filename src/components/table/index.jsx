@@ -2,7 +2,6 @@ import React from "react";
 import "./EventsTable.scss";
 import { Table } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import eventData from "../../model/eventData";
 import EventDropdownMenu from "../eventDropdownMenu";
 
 const itemRender = (_, type, originalElement) => {
@@ -70,8 +69,6 @@ const columns = [
     render: () => <EventDropdownMenu />,
   },
 ];
-
-console.log(eventData);
 
 const EventsTable = (props) => {
   return (
