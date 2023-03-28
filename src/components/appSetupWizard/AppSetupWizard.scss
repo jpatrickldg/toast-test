@@ -1,4 +1,4 @@
-.create-event-wizard-modal {
+.ant-modal {
   .ant-modal-content {
     height: 638px;
     padding: 0;
@@ -6,7 +6,7 @@
     .ant-modal-body {
       height: 100%;
 
-      .create-event-package-form {
+      .app-setup-form {
         display: flex;
         height: 100%;
 
@@ -20,6 +20,7 @@
             font-size: 12px;
             font-weight: 700;
             padding-inline-end: 0;
+            line-height: 20px;
           }
 
           .ant-steps-item-tail::after {

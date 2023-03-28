@@ -7,7 +7,7 @@ const time3 = new Date(Date.now() - 1000 * (60 * 27));
 
 export default [
   {
-    id: 1,
+    id: "1",
     key: "1",
     eventName: "Julia & William Wedding",
     createdAt: time1.toISOString(),
@@ -16,9 +16,12 @@ export default [
     status: "in progress",
     avatar: avatar,
     thumbnail: thumbnail,
+    eventDate: "20 June 2023",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, id. Molestias commodi provident ducimus debitis eum animi atque voluptatibus perspiciatis, pariatur aut expedita repellendus saepe, illum dolorem quibusdam sed quam?",
   },
   {
-    id: 2,
+    id: "2",
     key: "2",
     eventName: "Mario & Luigi Wedding",
     createdAt: time2.toISOString(),
@@ -27,9 +30,12 @@ export default [
     status: "in progress",
     avatar: avatar,
     thumbnail: thumbnail,
+    eventDate: "20 July 2023",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, id. Molestias commodi provident ducimus debitis eum animi atque voluptatibus perspiciatis, pariatur aut expedita repellendus saepe, illum dolorem quibusdam sed quam?",
   },
   {
-    id: 3,
+    id: "3",
     key: "3",
     eventName: "Popeye & Olive Wedding",
     createdAt: time3.toISOString(),
@@ -38,5 +44,8 @@ export default [
     status: "expired",
     avatar: avatar,
     thumbnail: thumbnail,
+    eventDate: "20 August 2023",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, id. Molestias commodi provident ducimus debitis eum animi atque voluptatibus perspiciatis, pariatur aut expedita repellendus saepe, illum dolorem quibusdam sed quam?",
   },
 ];

@@ -1,29 +1,29 @@
 import React, { useState } from "react";
-import "./CreateEventModal.scss";
+import "./AppSetupWizard.scss";
 import { Modal, Steps, Button, Form } from "antd";
-import CreateEventForm from "../createEventForm";
 import { LeftOutlined } from "@ant-design/icons";
-import SelectPackageForm from "../selectPackageForm";
-import BillingInfo from "../billingInfo";
+import EventCoverStep from "./eventCoverStep";
 
 const steps = [
   {
-    title: "Create Event",
+    title: "Event Cover Photo",
     description: "This is a description",
-    content: <CreateEventForm />,
+    content: <EventCoverStep />,
   },
   {
-    title: "Select Package",
+    title: "Invitation",
     description: "This is a description",
-    content: <SelectPackageForm />,
   },
   {
-    title: "Billing Info",
+    title: "Event Details",
     description: "This is a description",
-    content: <BillingInfo />,
   },
   {
-    title: "Add Guest",
+    title: "Event Instructions",
+    description: "This is a description",
+  },
+  {
+    title: "Congratulate Guest",
     description: "This is a description",
   },
 ];
@@ -32,9 +32,10 @@ const onFinish = (values) => {
   console.log("Success:", values);
 };
 
-const CreateEventModal = ({
-  openCreateEventWizard,
-  setOpenCreateEventWizard,
+const AppSetupWizard = ({
+  event,
+  openAppSetupWizard,
+  setOpenAppSetupWizard,
 }) => {
   const [current, setCurrent] = useState(0);
   const [form] = Form.useForm();
@@ -52,20 +53,21 @@ const CreateEventModal = ({
     title: item.title,
   }));
 
+  console.log(event);
+
   return (
     <Modal
-      className="create-event-wizard-modal"
       centered
-      open={openCreateEventWizard}
-      onOk={() => setOpenCreateEventWizard(false)}
-      onCancel={() => setOpenCreateEventWizard(false)}
+      open={openAppSetupWizard}
+      onOk={() => setOpenAppSetupWizard(false)}
+      onCancel={() => setOpenAppSetupWizard(false)}
       width={1088}
       footer={null}
     >
       <Form
         form={form}
         onFinish={onFinish}
-        className="create-event-package-form"
+        className="app-setup-form"
         layout="vertical"
       >
         <Steps
@@ -99,4 +101,4 @@ const CreateEventModal = ({
   );
 };
 
-export default CreateEventModal;
+export default AppSetupWizard;

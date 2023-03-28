@@ -1,0 +1,82 @@
+.add-import-guest-modal {
+  .ant-modal-content {
+    height: fit-content;
+
+    .ant-modal-body {
+      padding: 20px;
+      text-align: center;
+
+      .add-import-guest-title-container {
+        margin-top: 32px;
+
+        .title {
+          margin: 0;
+          font-family: "Spectral", serif;
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        .subtitle {
+          margin: 0;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+
+      .add-import-guest-form {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        .ant-upload-wrapper {
+          .ant-upload {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+            border: 2px solid #c6c6c6;
+            border-radius: 6px;
+            width: 100%;
+            padding: 10px;
+
+            .ant-btn {
+              width: min-content;
+            }
+          }
+
+          span.ant-upload {
+            border: none;
+
+            .ant-btn {
+              border-width: 2px;
+              display: flex;
+              align-items: center;
+
+              span {
+                color: #9e7d3d;
+                font-size: 14px;
+                font-weight: 700;
+              }
+            }
+
+            span {
+              font-size: 12px;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .submit {
+          width: fit-content;
+          margin: 32px auto;
+
+          .ant-btn {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

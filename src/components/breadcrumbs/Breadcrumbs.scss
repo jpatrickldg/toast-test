@@ -1,0 +1,27 @@
+.breadcrumbs {
+  display: flex;
+
+  a {
+    font-weight: 600;
+    color: #6b6a6b;
+    text-transform: capitalize;
+    transition: all 0.5s ease-in-out;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .crumb::after {
+    content: ">";
+    margin-inline: 4px;
+  }
+
+  .crumb:last-child {
+    color: black;
+  }
+
+  .crumb:last-child::after {
+    display: none;
+  }
+}

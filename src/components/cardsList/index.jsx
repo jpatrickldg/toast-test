@@ -6,6 +6,7 @@ import thumbnail from "../../images/thumbnail.png";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import EventDropdownMenu from "../eventDropdownMenu";
 import { formatDistanceToNow } from "date-fns";
+import { Link } from "react-router-dom";
 const { Meta } = Card;
 
 const itemRender = (_, type, originalElement) => {
@@ -42,18 +43,22 @@ const CardsList = (props) => {
       dataSource={props.events}
       renderItem={(item) => (
         <List.Item>
-          <Card
-            hoverable
-            cover={<img alt="example" src={thumbnail} className="cover-img" />}
-          >
-            <Meta
-              title={item.eventName}
-              description={formatDistanceToNow(new Date(item.createdAt), {
-                addSuffix: true,
-              })}
-            />
-            <EventDropdownMenu />
-          </Card>
+          <Link to={`/events/${item.id}`} state={props.events}>
+            <Card
+              hoverable
+              cover={
+                <img alt="example" src={thumbnail} className="cover-img" />
+              }
+            >
+              <Meta
+                title={item.eventName}
+                description={formatDistanceToNow(new Date(item.createdAt), {
+                  addSuffix: true,
+                })}
+              />
+              <EventDropdownMenu />
+            </Card>
+          </Link>
         </List.Item>
       )}
     />

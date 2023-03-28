@@ -1,4 +1,4 @@
-.credit-card-details-title-container {
+.billing-info-title-container {
   color: #231e20;
   text-align: center;
   margin-top: 40px;
@@ -16,10 +16,13 @@
   }
 }
 
-.credit-card-details-step {
-  width: 408px;
+.billing-info-step {
+  width: 660px;
   margin: auto;
   margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
 
   .ant-upload {
     width: 100% !important;
@@ -57,7 +60,7 @@
     border-width: 2px;
   }
 
-  .expiration-and-cvc-container {
+  .side-by-side-container {
     display: flex;
     justify-content: space-between;
     gap: 40px;
@@ -65,5 +68,11 @@
     .ant-form-item {
       flex: 1;
     }
+  }
+
+  .billing-address-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #c8c3c8;
   }
 }

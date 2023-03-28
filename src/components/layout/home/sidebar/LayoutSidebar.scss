@@ -1,0 +1,126 @@
+.ant-layout {
+  .ant-layout-sider {
+    width: 235px;
+    background: #474747;
+
+    .ant-layout-sider-children {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .logo {
+        padding: 35px;
+        padding-bottom: 0;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      .ant-menu {
+        flex: 1;
+        background: inherit;
+        border-inline-end: none;
+        color: white;
+        margin-top: 70px;
+        width: auto;
+
+        .ant-menu-item-group {
+          margin-left: 40px;
+
+          .ant-menu-item-group-title {
+            color: white;
+            padding: 0;
+          }
+
+          .ant-menu-item-group-list {
+            .ant-menu-item {
+              border-radius: 6px 0 0 6px;
+              width: auto;
+              margin-inline: 0;
+              margin-block: 0;
+              font-weight: 600;
+            }
+
+            .ant-menu-item-selected {
+              background-color: rgba(252, 231, 178, 0.3);
+              color: white;
+              border-right: 6px solid #f4b205;
+            }
+
+            .ant-menu-item:not(.ant-menu-item-selected):hover {
+              color: white;
+              background-color: rgba(252, 231, 178, 0.1);
+            }
+          }
+        }
+
+        .ant-menu-item-divider {
+          border-color: #d6c39e;
+          margin: 40px 0;
+        }
+      }
+
+      .logout-box {
+        background: white;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        margin: 45px 18px;
+
+        .user-info-container {
+          display: flex;
+          gap: 4px;
+
+          .avatar-container {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              display: block;
+              width: 80%;
+              border-radius: 100%;
+            }
+          }
+
+          .user-info-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .user-name {
+              font-weight: 700;
+            }
+
+            .user-title {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .logout-button-container {
+          width: 40px;
+
+          .ant-btn {
+            height: 100%;
+            width: 100%;
+            border-radius: 0 6px 6px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .anticon {
+              font-size: 20px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
